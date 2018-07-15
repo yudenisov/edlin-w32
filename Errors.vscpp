@@ -1,0 +1,11 @@
+
+╤ыєцхсэр  яЁюуЁрььр юсёыєцштрэш  яЁюуЁрьь Microsoft (R), тхЁёш  14.14.26433.0
+(C) ╩юЁяюЁрЎш  ╠рщъЁюёюЇЄ (Microsoft Corporation).  ┬ёх яЁртр чр∙ш∙хэ√.
+
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.14.26433 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+cl: командная строка warning D9024: нераспознанный тип исходных файлов ".", использование объектного файла
+cl: командная строка warning D9027: пропуск исходного файла "."
+NMAKE : fatal error U1077: "C:\Program Files\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.14.26428\bin\HostX86\x86\cl.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.

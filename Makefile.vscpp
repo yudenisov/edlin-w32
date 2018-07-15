@@ -1,0 +1,31 @@
+# Makefile for FreeDOS EDLIN
+# uses Microsoft Visual C/C++ 3.1 - may also work with other Microsoft-like compilers
+
+!include <win32.mak>
+
+!include "edlin.mak"
+
+#SOURCES=defines.c dynstr.c edlib.c getopt.c edlin.c 
+#OBJ=$(SOURCES:.c=.obj)
+#EXE=edlin.exe
+
+all: $(EXE)
+
+$(EXE): config.h $(OBJ)
+  $(link) $(ldebug) $(conflags) -out:$(EXE) $(OBJ) $(conlibs) 
+  
+
+.c.obj:  
+  $(cc) $(cdebug) $(cflags) $(cvars) $(SOURCES)
+
+config.h:
+	-copy config-h.vscpp config.h
+
+clean:
+	-del *.obj
+
+realclean: clean
+	-del config.h
+
+distclean: realclean
+	-del $(EXE)
